@@ -33,8 +33,9 @@ Vue.use(VueCoeObserver)
 
 **How to use?**
 ```js 
-this.state = this.$observer.init(callback)
-this.$observer.start(this.state, target, config)
+this.someState = this.$observer.init(callback)
+this.$observer.start(this.someState, target, config)
+this.$observer.stop(this.someState)
 ```
 
 or 
