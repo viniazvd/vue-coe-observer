@@ -4,19 +4,19 @@
   <a href="#"><img src="https://img.shields.io/npm/l/vuelidation.svg" alt="License" target="_blank"></a>
 </p>
 
-# Why do I need it? #
-  * **It tells you how the document is different now from how it was.** 
-  * **It handles any and all changes, no matter how complex.** 
-  * **It lets you express what kinds of things you’re interested in.** 
-  * **It’s fast.** 
-  * **It can automatically ignore changes you make during your callback.** 
+**Why do I need it?**
+  * It tells you how the document is different now from how it was.
+  * It handles any and all changes, no matter how complex.
+  * It lets you express what kinds of things you’re interested in.
+  * It’s fast. 
+  * It can automatically ignore changes you make during your callback.
   
-# Which browsers do we support? #
-* Google Chrome
-* Firefox
-* Safari
-* Opera
-* IE11
+**Which browsers do we support?**
+  * Google Chrome
+  * Firefox
+  * Safari
+  * Opera
+  * IE11
 
 **Install**
 
