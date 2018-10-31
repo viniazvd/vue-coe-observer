@@ -44,9 +44,7 @@ or
 observe: {
   state: {
     target: () => 'your target',
-    callback: mutations => {
-      // 'your callback'
-    },
+    callback: mutations => { 'your callback' },
     config: 'your configurations' 
   }
 }
