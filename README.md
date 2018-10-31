@@ -109,3 +109,66 @@ export default {
 }
 </script>
 ```
+
+or
+
+```vue
+<template>
+  <div id="app">
+    <div>
+      <div ref="target1" class="target1">
+        <div v-for="item1 in items1" :key="item1.id">{{ item1.id }}</div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+function getRandomColor () {
+  const letters = '0123456789ABCDEF'
+  let color = '#'
+  for (let i = 0; i < 6; i++) color += letters[ Math.floor(Math.random() * 16) ]
+  return color
+}
+export default {
+  name: 'app',
+
+  data () {
+    return {
+      items1: [
+        { id: 1 },
+        { id: 2 },
+        { id: 3 }
+      ]
+    }
+  },
+
+  observe: {
+    target1: {
+      target: () => document.querySelector('.target1'),
+      callback: mutations => {
+        return mutations.forEach(mutation => {
+          if (mutation.type === 'childList') document.querySelector('.target1').style.color = getRandomColor()
+        })
+      },
+      config: { childList: true }
+    }
+  },
+
+  mounted () {
+    setTimeout(() => {
+      this.items1.push({ id: 4 })
+    }, 3000)
+    setTimeout(() => {
+      this.items1.push({ id: 5 })
+    }, 7000)
+    setTimeout(() => {
+      this.$observer.stop(this.observers.target1)
+      this.items1.push({ id: 6 })
+    }, 10000)
+  }
+}
+</script>
+
+```
+
