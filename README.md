@@ -17,9 +17,6 @@ import VueCoeObserver from 'vue-coe-observer'
 Vue.use(VueCoeObserver)
 ```
 
-**Full documentation**
-- https://developer.mozilla.org/pt-BR/docs/Web/API/MutationObserver
-
 **Example usage**
 ```vue
 <template>
