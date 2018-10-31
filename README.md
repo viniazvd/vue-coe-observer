@@ -210,4 +210,6 @@ target         | `Object?`       |    true   | html element or vue reference ($r
 callback       | `Function`      |    true   | is invoked when the observer sees changes 
 config         | `Object`        |    true   | a set of options for the observer: childList, attributes and subtree
 
-
+**References**
+- https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/MutationObserver
+- https://github.com/rafaelw/mutation-summary
