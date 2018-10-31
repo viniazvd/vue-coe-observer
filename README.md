@@ -37,6 +37,26 @@ import VueCoeObserver from 'vue-coe-observer'
 Vue.use(VueCoeObserver)
 ```
 
+**How to use?**
+```js 
+this.state = this.$observer.init(callback)
+this.$observer.start(this.state, target, config)
+```
+
+or 
+
+```js
+observe: {
+  state: {
+    target: () => 'your target',
+    callback: mutations => {
+      // 'your callback'
+    },
+    config: 'your configurations' 
+  }
+}
+```
+
 **Example usage**
 ```vue
 <template>
@@ -182,6 +202,12 @@ export default {
   }
 }
 </script>
-
 ```
+
+Name           | Type            |  Required | About
+----           | -----------     |  -------  | -----
+target         | `Object?`       |    true   | html element or vue reference ($refs)
+callback       | `Function`      |    true   | is invoked when the observer sees changes 
+config         | `Object`        |    true   | a set of options for the observer: childList, attributes and subtree
+
 
