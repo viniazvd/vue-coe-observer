@@ -1,10 +1,6 @@
 <h1 align="center">vue-coe-observer ✅</h1>
 
 <p align="center">
-  <q>based on <b>MutationObserver API</b></q>
-</p>
-
-<p align="center">
   <a href="#"><img src="https://img.shields.io/npm/l/vuelidation.svg" alt="License" target="_blank"></a>
 </p>
 
