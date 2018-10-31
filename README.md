@@ -5,19 +5,13 @@
 </p>
 
 # Why do I need it? #
-
-Mutation Summary does five main things for you:
-
   * **It tells you how the document is different now from how it was.** 
   * **It handles any and all changes, no matter how complex.** 
   * **It lets you express what kinds of things you’re interested in.** 
   * **It’s fast.** 
   * **It can automatically ignore changes you make during your callback.** 
   
-# Where can Mutation Summary be used? #
-
-The Mutation Summary library depends on the presence of the Mutation Observer DOM API. Mutation Observers are available in
-
+# Which browsers do we support? #
 * Google Chrome
 * Firefox
 * Safari
