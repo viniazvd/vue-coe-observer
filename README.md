@@ -100,19 +100,25 @@ export default {
 
   mounted () {
     const config = { childList: true }
-    const callback = mutations => {
+    const callback1 = mutations => {
       return mutations.forEach(mutation => {
         if (mutation.type === 'childList') target1.style.color = getRandomColor()
       })
     }
-    
+
+    const callback2 = mutations => {
+      return mutations.forEach(mutation => {
+        if (mutation.type === 'childList') target1.style.color = getRandomColor()
+      })
+    }
+
     const target1 = this.$refs.target1
     const target2 = this.$refs.target2
 
-    this.obs1 = this.$observer.init(callback)
+    this.obs1 = this.$observer.init(callback1)
     this.$observer.start(this.obs1, target1, config)
 
-    this.obs2 = this.$observer.init(callback)
+    this.obs2 = this.$observer.init(callback2)
     this.$observer.start(this.obs2, target2, config)
 
     setTimeout(() => {
