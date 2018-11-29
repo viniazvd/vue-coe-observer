@@ -108,7 +108,7 @@ export default {
 
     const callback2 = mutations => {
       return mutations.forEach(mutation => {
-        if (mutation.type === 'childList') target1.style.color = getRandomColor()
+        if (mutation.type === 'childList') target2.style.color = getRandomColor()
       })
     }
 
