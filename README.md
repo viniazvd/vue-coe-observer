@@ -205,7 +205,7 @@ export default {
 
 Name           | Type            |  Required | About
 ----           | -----------     |  -------  | -----
-target         | `Object?`       |    true   | html element or vue reference ($refs)
+target         | `Object?`       |    true   | html element
 callback       | `Function`      |    true   | is invoked when the observer sees changes 
 config         | `Object`        |    true   | a set of options for the observer: childList, attributes and subtree
 
